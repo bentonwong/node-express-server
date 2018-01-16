@@ -7,8 +7,11 @@ This application allows users to send quick, simple email surveys.
 ##Features
 
 -Built server using NodeJS/Express connected to a MongoDB database with a React-Redux client front end.
+
 -Distributes emails and receives responses via SendGrid.
+
 -Accepts credit card payments onsite using Stripe.
+
 -Simplified user sign up and log in process using Passport.js to enable registration exclusively via Google or Facebook OAuth.
 
 ## Contributing
