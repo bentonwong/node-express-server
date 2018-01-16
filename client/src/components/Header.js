@@ -9,7 +9,13 @@ class Header extends Component {
       case null:
         return;
       case false:
-        return <li><a href="/auth/google">Login With Google</a></li>;
+        return (
+          <div>
+            <li><a href="/auth/google">Login With Google</a></li>
+            <li> | </li>
+            <li><a href="/auth/facebook">Login With Facebook</a></li>
+          </div>
+        )
       default:
         return [
           <li key="1"><Payments /></li>,
@@ -24,11 +30,11 @@ class Header extends Component {
   render() {
     return(
       <nav>
-        <div className="nav-wrapper">
+        <div className="nav-wrapper red" style={{ padding: '0 10px'}}>
           <Link
             to={this.props.auth ? '/surveys' : '/'}
             className="left brand-logo">
-            Emaily
+            SurveyPal
           </Link>
           <ul className="right">
             {this.renderContent()}

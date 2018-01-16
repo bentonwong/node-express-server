@@ -23,12 +23,13 @@ class SurveyNew extends Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         {this.renderContent()}
       </div>
     );
   }
+
 }
 
 export default reduxForm({
