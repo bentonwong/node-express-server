@@ -32,8 +32,15 @@ class SurveyList extends Component {
     } else {
       return (
         <div>
-          <h3 style={{ textAlign: 'center' }}>Welcome!</h3>
-          <p style={{ textAlign: 'center' }}>Click <Link to="/surveys/new">here</Link> to start your first survey</p>
+          <h3 style={{ textAlign: 'center' }}>
+            Welcome!
+          </h3>
+          <p style={{ textAlign: 'center' }}>
+            Click <Link to="/surveys/new">here</Link> to start your first survey
+          </p>
+          <p style={{ textAlign: 'center' }}>
+            *This is a non-commercial site and is only for demo purposes. Use this fake credit card number to buy credits: '4242 4242 4242 4242'.
+          </p>
         </div>
       )
     }
